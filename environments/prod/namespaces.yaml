@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kb-prod
+  labels:
+    environment: prod
+    managed-by: argocd
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kb-prod-system
+  labels:
+    environment: prod
+    managed-by: argocd
+    type: system
+
